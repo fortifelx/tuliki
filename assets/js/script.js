@@ -1,12 +1,15 @@
 (function(){
     var slides = $('.main_slide');
     var counter = $('.main_slide_count span');
+    var count = 0;
     slides.click(function(){
         if($(this).hasClass('main_slide_active')) return;
+        count = slides.index(this);
+        var countText = count + 1 + '/';
+        counter.text( '0' + countText);
         $('.main_slide').removeClass('main_slide_active');
         $(this).addClass('main_slide_active');
     });
-    var count = 0;
     $('.main_slide_left_arrow').click(function(){
         event.stopPropagation();
         slides.removeClass('main_slide_active');
@@ -17,7 +20,7 @@
             count = count - 1;
             $(slides[count]).addClass('main_slide_active');
         }
-        var countText = count + 1 + '/'
+        var countText = count + 1 + '/';
         counter.text( '0' + countText);
     });
     $('.main_slide_right_arrow').click(function(){
@@ -31,7 +34,7 @@
             count = count + 1;
             $(slides[count]).addClass('main_slide_active');
         }
-        var countText = count + 1 + '/'
+        var countText = count + 1 + '/';
         counter.text( '0' + countText);
     });
 })();

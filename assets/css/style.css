@@ -525,6 +525,57 @@ body, * {
         color: white;
         text-transform: uppercase; }
 
+.main_popular {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 10rem 3rem 2rem 3rem; }
+  .main_popular_header {
+    font-size: 3.6rem;
+    font-weight: bold;
+    width: 100%;
+    color: #e56744; }
+  .main_popular_camin {
+    font-size: 2.8rem;
+    color: #444444;
+    width: 50%;
+    float: left;
+    margin-top: 1.5rem;
+    position: relative;
+    display: inline-block; }
+    .main_popular_camin span {
+      display: inline-block;
+      position: relative; }
+      .main_popular_camin span:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #e56744;
+        bottom: 0; }
+  .main_popular_banya {
+    font-size: 2.8rem;
+    color: #444444;
+    width: 50%;
+    float: right;
+    margin-top: 1.5rem;
+    position: relative;
+    display: inline-block; }
+    .main_popular_banya span {
+      display: inline-block;
+      position: relative; }
+      .main_popular_banya span:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #e56744;
+        bottom: 0; }
+
 .main_wrapper {
   width: 100%;
   height: auto;
