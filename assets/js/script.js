@@ -41,6 +41,9 @@
 $('.main_slide_img_viewer img').click(function(){
     $(this).toggleClass('rotate_img');
 });
+$('.main_popular_category_img_viewer img').click(function(){
+    $(this).toggleClass('rotate_img');
+});
 // (function() {
 //     // Init
 //     var targets = $('.main_slide_img_viewer');

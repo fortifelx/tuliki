@@ -76,9 +76,20 @@
       &_viewer
         width: 100%
         height: auto
+        perspective: 80px
         img
           width: 100%
           height: auto
+          transition: all 350ms ease-in-out
+          &:hover
+            transform: rotateY(1deg)
+            transition: all 350ms ease-in-out
+        .rotate_img
+          transform: rotateY(180deg)
+          transition: all 350ms ease-in-out
+          &:hover
+            transform: rotateY(181deg)
+            transition: all 350ms ease-in-out
     &_content
       display: flex
       flex-direction: column
@@ -128,7 +139,7 @@
       width: 25rem
       transition: transform 350ms ease-in-out, font-weight 150ms ease-in-out
       &:hover
-        transform: scale(1.01)
+        transform: scale(1.03)
         font-weight: normal
         text-decoration: none
         color: white
