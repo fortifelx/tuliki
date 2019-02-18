@@ -1,10 +1,11 @@
 .main_about
-  width: 95%
+  width: 100%
   margin: 0 auto
   position: relative
   height: auto
-  padding-top: 100px
-  padding-bottom: 20px
+  //padding-top: 100px
+  //padding-bottom: 20px
+  padding: 10rem 3rem 2rem 3rem
   &_options
     width: 100%
     ul
@@ -105,8 +106,12 @@
     width: 100%
     padding-top: 10rem
   &_wrapper
+    display: flex
+    flex-direction: column
+    justify-content: space-between
     width: 50%
     flex: 1 1 auto
+    padding-right: 3rem
   &_videos
     display: flex
     flex-direction: row
@@ -116,6 +121,73 @@
     justify-content: space-between
     align-content: space-between
   &_video
-    width: 45%
-    height: 45%
-
+    width: calc(50% - 1.5rem)
+    height: calc(50% - 1.2rem)
+    padding-top: 5rem
+    &_frame
+      width: 100%
+      height: calc(100% - 3.2rem)
+    &_text
+      width: 100%
+      font-size: 1.4rem
+      line-height: 3.2rem
+      color: $black
+      padding-top: 0.5rem
+  &_header
+    width: 100%
+    font-size: 8rem
+    line-height: 10rem
+    color: $orange
+    font-weight: bold
+  &_text
+    width: 100%
+    font-size: 1.6rem
+    color: $black
+    margin-top: 1.5rem
+  &_services
+    width: 100%
+    height: auto
+    padding-top: 3rem
+    ul
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      max-height: 11rem
+      width: 100%
+    li
+      font-size: 1.6rem
+      line-height: 3.5rem
+      vertical-align: baseline
+      font-weight: bold
+      color: $black
+      margin-right: 1rem
+      img
+        display: inline-block
+        height: 2rem
+        width: auto
+        margin-right: 0.5rem
+  &_btn
+    display: inline-block
+    position: relative
+    width: 250px
+    height: 60px
+    line-height: 56px
+    background-color: white
+    border: 2px solid $orange
+    border-radius: 10px
+    font-size: 1.8rem
+    text-align: center
+    color: $black
+    box-sizing: border-box
+    margin: 4rem auto 0
+    text-decoration: none
+    transition: all 350ms
+    text-transform: uppercase
+    &:hover
+      background-color: $orange
+      text-decoration: none
+      color: white
+      transform: scale(1.05)
+      p
+        color: white
+        text-transform: uppercase

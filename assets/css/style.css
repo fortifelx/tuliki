@@ -355,12 +355,11 @@ body, * {
         font-weight: normal; }
 
 .main_about {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   height: auto;
-  padding-top: 100px;
-  padding-bottom: 20px; }
+  padding: 10rem 3rem 2rem 3rem; }
   .main_about_options {
     width: 100%; }
     .main_about_options ul {
@@ -440,8 +439,12 @@ body, * {
     width: 100%;
     padding-top: 10rem; }
   .main_about_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 50%;
-    flex: 1 1 auto; }
+    flex: 1 1 auto;
+    padding-right: 3rem; }
   .main_about_videos {
     display: flex;
     flex-direction: row;
@@ -451,8 +454,76 @@ body, * {
     justify-content: space-between;
     align-content: space-between; }
   .main_about_video {
-    width: 45%;
-    height: 45%; }
+    width: calc(50% - 1.5rem);
+    height: calc(50% - 1.2rem);
+    padding-top: 5rem; }
+    .main_about_video_frame {
+      width: 100%;
+      height: calc(100% - 3.2rem); }
+    .main_about_video_text {
+      width: 100%;
+      font-size: 1.4rem;
+      line-height: 3.2rem;
+      color: #444444;
+      padding-top: 0.5rem; }
+  .main_about_header {
+    width: 100%;
+    font-size: 8rem;
+    line-height: 10rem;
+    color: #e56744;
+    font-weight: bold; }
+  .main_about_text {
+    width: 100%;
+    font-size: 1.6rem;
+    color: #444444;
+    margin-top: 1.5rem; }
+  .main_about_services {
+    width: 100%;
+    height: auto;
+    padding-top: 3rem; }
+    .main_about_services ul {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      max-height: 11rem;
+      width: 100%; }
+    .main_about_services li {
+      font-size: 1.6rem;
+      line-height: 3.5rem;
+      vertical-align: baseline;
+      font-weight: bold;
+      color: #444444;
+      margin-right: 1rem; }
+      .main_about_services li img {
+        display: inline-block;
+        height: 2rem;
+        width: auto;
+        margin-right: 0.5rem; }
+  .main_about_btn {
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 60px;
+    line-height: 56px;
+    background-color: white;
+    border: 2px solid #e56744;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #444444;
+    box-sizing: border-box;
+    margin: 4rem auto 0;
+    text-decoration: none;
+    transition: all 350ms;
+    text-transform: uppercase; }
+    .main_about_btn:hover {
+      background-color: #e56744;
+      text-decoration: none;
+      color: white;
+      transform: scale(1.05); }
+      .main_about_btn:hover p {
+        color: white;
+        text-transform: uppercase; }
 
 .main_wrapper {
   width: 100%;
