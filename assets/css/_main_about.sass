@@ -1,0 +1,97 @@
+.main_about
+  width: 95%
+  margin: 0 auto
+  position: relative
+  height: auto
+  padding-top: 100px
+  padding-bottom: 20px
+  &_options
+    width: 100%
+    ul
+      display: flex
+      flex-direction: row
+      align-content: center
+      justify-content: space-between
+    &_btn
+      display: block
+      position: relative
+      width: 250px
+      height: 60px
+      line-height: 56px
+      background-color: white
+      border: 2px solid $orange
+      border-radius: 10px
+      font-size: 1.8rem
+      text-align: center
+      color: $black
+      box-sizing: border-box
+      margin: 30px auto 0
+      text-decoration: none
+      transition: all 350ms
+      text-transform: uppercase
+      &:hover
+        background-color: $orange
+        text-decoration: none
+        color: white
+        transform: scale(1.05)
+        p
+          color: white
+          text-transform: uppercase
+      //p
+      //  position: absolute
+      //  text-align: center
+      //  display: block
+      //  width: 100%
+      //  line-height: 56px
+      //  top: 0
+      //  left: 0
+      //  bottom: 0
+      //  transition: all 350ms
+      //  text-transform: uppercase
+      //&:hover
+      //  color: white
+      //  text-decoration: none
+      //  border-width: 30px
+      //  p
+      //    top: -28px
+      //    color: white
+  &_option
+    display: block
+    width: 12%
+    height: auto
+    a
+      display: block
+      width: 100%
+      height: auto
+      text-decoration: none
+      text-align: center
+      img
+        display: inline-block
+        height: 105px
+        transition: transform 350ms ease-in-out
+    &:hover
+      img
+        transform: scale(1.1)
+    &_text
+      display: block
+      width: 100%
+      position: relative
+      font-size: 1.8rem
+      color: $black
+      padding-top: 35px
+      &:before
+        content: ''
+        position: absolute
+        display: block
+        top: 22px
+        left: 0
+        right: 0
+        width: 30%
+        height: 1px
+        background-color: $orange
+        margin: 0 auto
+
+      u
+        color: $orange
+        text-decoration: none
+
