@@ -2,10 +2,12 @@ $orange: rgba(229, 103, 68, 1)
 $black : rgba(68, 68, 68, 1)
 
 
-body, *
+body, html, *
   font-size: 10px
   font-family: Lato
   color: $black
+  @media screen and (max-width: 1680px)
+    font-size: 8px
 
 @import "font"
 @import "aside"

@@ -1,7 +1,10 @@
-body, * {
+body, html, * {
   font-size: 10px;
   font-family: Lato;
   color: #444444; }
+  @media screen and (max-width: 1680px) {
+    body, html, * {
+      font-size: 8px; } }
 
 @font-face {
   font-family: "Comfortaa";
@@ -575,6 +578,14 @@ body, * {
         height: 1px;
         background-color: #e56744;
         bottom: 0; }
+  .main_popular_wrapper {
+    display: flex;
+    width: 100%;
+    padding-top: 3rem;
+    flex-direction: row;
+    justify-content: space-between; }
+  .main_popular_column {
+    width: calc(50% - 1.5rem); }
 
 .main_wrapper {
   width: 100%;
