@@ -11,7 +11,7 @@
   &_camin
     font-size: 2.8rem
     color: $black
-    width: 50%
+    width: calc(50% - 1.5rem)
     float: left
     margin-top: 1.5rem
     position: relative
@@ -31,7 +31,7 @@
   &_banya
     font-size: 2.8rem
     color: $black
-    width: 50%
+    width: calc(50% - 1.5rem)
     float: right
     margin-top: 1.5rem
     position: relative
@@ -56,3 +56,80 @@
     justify-content: space-between
   &_column
     width: calc(50% - 1.5rem)
+  &_viewer
+    width: 100%
+    position: relative
+    overflow: visible
+  &_category
+    position: relative
+    z-index: 1
+    display: flex
+    flex-direction: row
+    align-content: stretch
+    align-items: stretch
+    width: 100%
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05)
+    &_img
+      width: 100%
+      display: block
+      overflow: hidden
+      &_viewer
+        width: 100%
+        height: auto
+        img
+          width: 100%
+          height: auto
+    &_content
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      padding-left: 3rem
+    &_header
+      font-size: 2.4rem
+      color: $black
+    &_text
+      font-size: 1.8rem
+      line-height: 2rem
+      vertical-align: baseline
+      color: rgba(0, 0, 0, 0.5)
+      font-weight: 300
+      padding-right: 1rem
+      ul
+        padding: 2rem 0
+      ul li
+        font-size: 1.6rem
+        line-height: 2rem
+        vertical-align: middle
+        font-weight: normal
+        color: $black
+        padding-left: 2.5rem
+        position: relative
+        padding-bottom: 1rem
+        &:before
+          content: ''
+          display: inline-block
+          background-color: $orange
+          width: 1.5rem
+          height: 1.5rem
+          border-radius: 1.5rem
+          position: absolute
+          top: 0.3rem
+          left: 0
+    &_btn
+      background-color: $orange
+      color: white
+      display: inline-block
+      height: 40px
+      line-height: 40px
+      text-align: center
+      font-size: 1.6rem
+      font-weight: 300
+      border-radius: 10px
+      width: 25rem
+      transition: transform 350ms ease-in-out, font-weight 150ms ease-in-out
+      &:hover
+        transform: scale(1.01)
+        font-weight: normal
+        text-decoration: none
+        color: white
+

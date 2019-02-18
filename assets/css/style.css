@@ -352,7 +352,7 @@ body, html, * {
       line-height: 40px;
       text-align: center;
       font-size: 1.6rem;
-      font-weight: lighter;
+      font-weight: 300;
       border-radius: 10px;
       width: 14vw;
       transition: transform 350ms ease-in-out, font-weight 150ms ease-in-out; }
@@ -544,7 +544,7 @@ body, html, * {
   .main_popular_camin {
     font-size: 2.8rem;
     color: #444444;
-    width: 50%;
+    width: calc(50% - 1.5rem);
     float: left;
     margin-top: 1.5rem;
     position: relative;
@@ -564,7 +564,7 @@ body, html, * {
   .main_popular_banya {
     font-size: 2.8rem;
     color: #444444;
-    width: 50%;
+    width: calc(50% - 1.5rem);
     float: right;
     margin-top: 1.5rem;
     position: relative;
@@ -589,6 +589,82 @@ body, html, * {
     justify-content: space-between; }
   .main_popular_column {
     width: calc(50% - 1.5rem); }
+  .main_popular_viewer {
+    width: 100%;
+    position: relative;
+    overflow: visible; }
+  .main_popular_category {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    align-items: stretch;
+    width: 100%;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05); }
+    .main_popular_category_img {
+      width: 100%;
+      display: block;
+      overflow: hidden; }
+      .main_popular_category_img_viewer {
+        width: 100%;
+        height: auto; }
+        .main_popular_category_img_viewer img {
+          width: 100%;
+          height: auto; }
+    .main_popular_category_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding-left: 3rem; }
+    .main_popular_category_header {
+      font-size: 2.4rem;
+      color: #444444; }
+    .main_popular_category_text {
+      font-size: 1.8rem;
+      line-height: 2rem;
+      vertical-align: baseline;
+      color: rgba(0, 0, 0, 0.5);
+      font-weight: 300;
+      padding-right: 1rem; }
+      .main_popular_category_text ul {
+        padding: 2rem 0; }
+      .main_popular_category_text ul li {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        vertical-align: middle;
+        font-weight: normal;
+        color: #444444;
+        padding-left: 2.5rem;
+        position: relative;
+        padding-bottom: 1rem; }
+        .main_popular_category_text ul li:before {
+          content: "";
+          display: inline-block;
+          background-color: #e56744;
+          width: 1.5rem;
+          height: 1.5rem;
+          border-radius: 1.5rem;
+          position: absolute;
+          top: 0.3rem;
+          left: 0; }
+    .main_popular_category_btn {
+      background-color: #e56744;
+      color: white;
+      display: inline-block;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 300;
+      border-radius: 10px;
+      width: 25rem;
+      transition: transform 350ms ease-in-out, font-weight 150ms ease-in-out; }
+      .main_popular_category_btn:hover {
+        transform: scale(1.01);
+        font-weight: normal;
+        text-decoration: none;
+        color: white; }
 
 .main_wrapper {
   width: 100%;
