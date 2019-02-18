@@ -405,7 +405,7 @@ body, * {
       text-align: center; }
       .main_about_option a img {
         display: inline-block;
-        height: 105px;
+        height: 10.5rem;
         transition: transform 350ms ease-in-out; }
     .main_about_option:hover img {
       transform: scale(1.1); }
@@ -430,6 +430,29 @@ body, * {
       .main_about_option_text u {
         color: #e56744;
         text-decoration: none; }
+  .main_about_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    height: auto;
+    width: 100%;
+    padding-top: 10rem; }
+  .main_about_wrapper {
+    width: 50%;
+    flex: 1 1 auto; }
+  .main_about_videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    align-content: space-between; }
+  .main_about_video {
+    width: 45%;
+    height: 45%; }
 
 .main_wrapper {
   width: 100%;
