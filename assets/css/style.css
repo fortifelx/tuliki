@@ -592,7 +592,8 @@ body, html, * {
   .main_popular_viewer {
     width: 100%;
     position: relative;
-    overflow: visible; }
+    overflow: visible;
+    padding-bottom: 8rem; }
   .main_popular_category {
     position: relative;
     z-index: 1;
@@ -676,6 +677,20 @@ body, html, * {
         font-weight: normal;
         text-decoration: none;
         color: white; }
+  .main_popular_slider {
+    background-color: #FAFAFA;
+    width: 90%;
+    position: absolute;
+    top: 80%;
+    border-radius: 10px;
+    left: 5%;
+    overflow: hidden;
+    z-index: 2;
+    padding: 3rem; }
+    .main_popular_slider_viewer {
+      width: 100vw; }
+  .main_popular_slide {
+    display: inline-block; }
 
 .main_wrapper {
   width: 100%;
