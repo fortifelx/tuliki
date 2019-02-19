@@ -716,13 +716,15 @@ body, html, * {
       margin-top: 3rem;
       width: 25px;
       height: auto;
+      min-height: 10px;
       display: block;
-      transform: rotateX(180deg);
       margin: 4rem auto 0 auto;
       transition: transform 600ms ease-in-out; }
       .main_popular_slider .slick_d_arrow img {
-        width: 100%; }
-      .main_popular_slider .slick_d_arrow_active {
+        width: 100%;
+        transform: rotateX(180deg);
+        transition: transform 600ms ease-in-out; }
+      .main_popular_slider .slick_d_arrow_active img {
         transform: rotateX(0); }
       .main_popular_slider .slick_d_arrow:hover {
         transform: scale(1.3); }
@@ -821,10 +823,29 @@ body, html, * {
     color: #e56744;
     font-weight: bold; }
   .main_reviews_slider {
-    width: 150%;
+    width: 130%;
     height: 100%;
     overflow: hidden;
     padding-bottom: 5rem; }
+    .main_reviews_slider .slick-review {
+      position: absolute;
+      bottom: 1rem;
+      width: 50px;
+      background-color: transparent;
+      border: none;
+      transition: transform 200ms ease-in-out; }
+      .main_reviews_slider .slick-review img {
+        width: 100%; }
+      .main_reviews_slider .slick-review:focus {
+        outline: none; }
+      .main_reviews_slider .slick-review:hover {
+        transform: scale(1.2); }
+    .main_reviews_slider .slick-prev {
+      left: 61%; }
+      .main_reviews_slider .slick-prev img {
+        transform: rotate(180deg); }
+    .main_reviews_slider .slick-next {
+      left: calc(60% + 8rem); }
   .main_reviews_slide {
     display: inline-block;
     width: 26%;

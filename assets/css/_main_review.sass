@@ -61,10 +61,29 @@
     color: $orange
     font-weight: bold
   &_slider
-    width: 150%
+    width: 130%
     height: 100%
     overflow: hidden
     padding-bottom: 5rem
+    .slick-review
+      position: absolute
+      bottom: 1rem
+      width: 50px
+      background-color: transparent
+      border: none
+      transition: transform 200ms ease-in-out
+      img
+        width: 100%
+      &:focus
+        outline: none
+      &:hover
+        transform: scale(1.2)
+    .slick-prev
+      left: 61%
+      img
+        transform: rotate(180deg)
+    .slick-next
+      left: calc(60% + 8rem)
   &_slide
     display: inline-block
     width: 26%

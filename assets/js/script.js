@@ -44,21 +44,38 @@ $('.main_slide_img_viewer img').click(function(){
 $('.main_popular_category_img_viewer img').click(function(){
     $(this).toggleClass('rotate_img');
 });
-$('.main_popular_slider_viewer').slick({
-    infinite: true,
-    zIndex: 2,
-    prevArrow : '<button type="button" class="slick-category slick-prev"><img src="assets/img/slick_l.svg" alt=""></button>',
-    nextArrow : '<button type="button" class="slick-category slick-next"><img src="assets/img/slick_r.svg" alt=""></button>',
-    speed: 300,
-    slidesToShow: 4,
-    adaptiveHeight: true,
-    slidesToScroll: 1
-});
-$('.slick_d_arrow').click(function(){
-   var parent  = $(this).parent();
-   parent.toggleClass('main_popular_slider_active');
-   $(this).toggleClass('slick_d_arrow_active');
-});
+(function(){
+    $('.main_popular_slider_viewer').slick({
+        infinite: true,
+        zIndex: 2,
+        prevArrow : '<button type="button" class="slick-category slick-prev"><img src="assets/img/slick_l.svg" alt=""></button>',
+        nextArrow : '<button type="button" class="slick-category slick-next"><img src="assets/img/slick_r.svg" alt=""></button>',
+        speed: 300,
+        slidesToShow: 4,
+        adaptiveHeight: true,
+        slidesToScroll: 1
+    });
+    $('.slick_d_arrow').click(function(){
+        var parent  = $(this).parent();
+        parent.toggleClass('main_popular_slider_active');
+        $(this).toggleClass('slick_d_arrow_active');
+    });
+})();
+
+
+(function(){
+    $('.main_reviews_slider').slick({
+        infinite: true,
+        zIndex: 2,
+        arrows: true,
+        prevArrow : '<button class="slick-review slick-prev"><img src="assets/img/review_arrow.svg" alt=""></button>',
+        nextArrow : '<button class="slick-review slick-next"><img src="assets/img/review_arrow.svg" alt=""></button>',
+        speed: 300,
+        slidesToShow: 3,
+        // adaptiveHeight: true,
+        slidesToScroll: 1
+    });
+})();
 // (function() {
 //     // Init
 //     var targets = $('.main_slide_img_viewer');

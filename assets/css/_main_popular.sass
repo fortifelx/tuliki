@@ -197,14 +197,17 @@
       margin-top: 3rem
       width: 25px
       height: auto
+      min-height: 10px
       display: block
-      transform: rotateX(180deg)
       margin: 4rem auto 0 auto
       transition: transform 600ms ease-in-out
       img
         width: 100%
+        transform: rotateX(180deg)
+        transition: transform 600ms ease-in-out
       &_active
-        transform: rotateX(0)
+        img
+          transform: rotateX(0)
       &:hover
         transform: scale(1.3)
     &_viewer
