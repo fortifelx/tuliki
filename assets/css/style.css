@@ -224,7 +224,7 @@ body, html, * {
       line-height: 60px;
       text-align: center;
       font-size: 1.6rem;
-      font-weight: lighter;
+      font-weight: 300;
       border-radius: 10px;
       width: 18vw;
       opacity: 0;
@@ -688,7 +688,23 @@ body, html, * {
     z-index: 2;
     padding: 3rem 5rem; }
     .main_popular_slider_viewer {
-      width: 100vw; }
+      width: auto;
+      height: auto;
+      overflow: hidden; }
+      .main_popular_slider_viewer .slick-category {
+        position: absolute;
+        top: 50%;
+        background-color: transparent;
+        border: none;
+        transition: transform 200ms ease-in-out; }
+        .main_popular_slider_viewer .slick-category:focus {
+          outline: none; }
+        .main_popular_slider_viewer .slick-category:hover {
+          transform: scale(1.2); }
+      .main_popular_slider_viewer .slick-prev {
+        left: 1.5rem; }
+      .main_popular_slider_viewer .slick-next {
+        right: 1.5rem; }
   .main_popular_slide {
     display: inline-block;
     width: 10rem; }

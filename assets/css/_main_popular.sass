@@ -156,7 +156,23 @@
     z-index: 2
     padding: 3rem 5rem
     &_viewer
-      width: 100vw
+      width: auto
+      height: auto
+      overflow: hidden
+      .slick-category
+        position: absolute
+        top: 50%
+        background-color: transparent
+        border: none
+        transition: transform 200ms ease-in-out
+        &:focus
+          outline: none
+        &:hover
+          transform: scale(1.2)
+      .slick-prev
+        left: 1.5rem
+      .slick-next
+        right: 1.5rem
   &_slide
     display: inline-block
     width: 10rem
