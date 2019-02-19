@@ -589,6 +589,26 @@ body, html, * {
     justify-content: space-between; }
   .main_popular_column {
     width: calc(50% - 1.5rem); }
+    .main_popular_column:first-child .main_popular_viewer:first-child .main_popular_category {
+      position: relative;
+      z-index: 20; }
+    .main_popular_column:first-child .main_popular_viewer:first-child .main_popular_slider {
+      z-index: 10; }
+    .main_popular_column:first-child .main_popular_viewer:last-child .main_popular_category {
+      position: relative;
+      z-index: 6; }
+    .main_popular_column:first-child .main_popular_viewer:last-child .main_popular_slider {
+      z-index: 2; }
+    .main_popular_column:last-child .main_popular_viewer:first-child .main_popular_category {
+      position: relative;
+      z-index: 20; }
+    .main_popular_column:last-child .main_popular_viewer:first-child .main_popular_slider {
+      z-index: 10; }
+    .main_popular_column:last-child .main_popular_viewer:last-child .main_popular_category {
+      position: relative;
+      z-index: 6; }
+    .main_popular_column:last-child .main_popular_viewer:last-child .main_popular_slider {
+      z-index: 2; }
   .main_popular_viewer {
     width: 100%;
     position: relative;
@@ -602,6 +622,7 @@ body, html, * {
     align-content: stretch;
     align-items: stretch;
     width: 100%;
+    background-color: white;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05); }
     .main_popular_category_img {
       width: 100%;
@@ -681,12 +702,21 @@ body, html, * {
     background-color: #FAFAFA;
     width: 90%;
     position: absolute;
-    top: 80%;
+    bottom: 4rem;
     border-radius: 10px;
     left: 5%;
     overflow: hidden;
     z-index: 2;
-    padding: 3rem 5rem; }
+    padding: 3rem 5rem 1rem 5rem; }
+    .main_popular_slider .slick_d_arrow {
+      cursor: pointer;
+      margin-top: 3rem;
+      width: 25px;
+      height: auto;
+      display: block;
+      margin: 4rem auto 0 auto; }
+      .main_popular_slider .slick_d_arrow img {
+        width: 100%; }
     .main_popular_slider_viewer {
       width: auto;
       height: auto;
