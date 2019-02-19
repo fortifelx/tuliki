@@ -54,6 +54,11 @@ $('.main_popular_slider_viewer').slick({
     adaptiveHeight: true,
     slidesToScroll: 1
 });
+$('.slick_d_arrow').click(function(){
+   var parent  = $(this).parent();
+   parent.toggleClass('main_popular_slider_active');
+   $(this).toggleClass('slick_d_arrow_active');
+});
 // (function() {
 //     // Init
 //     var targets = $('.main_slide_img_viewer');

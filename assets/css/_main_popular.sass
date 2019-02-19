@@ -189,15 +189,22 @@
     overflow: hidden
     z-index: 2
     padding: 3rem 5rem 1rem 5rem
+    transition: bottom 600ms ease-in-out
+    &_active
+      bottom: -60%
     .slick_d_arrow
       cursor: pointer
       margin-top: 3rem
       width: 25px
       height: auto
       display: block
+      transform: rotateX(180deg)
       margin: 4rem auto 0 auto
+      transition: transform 600ms ease-in-out
       img
         width: 100%
+      &_active
+        transform: rotateX(0)
     &_viewer
       width: auto
       height: auto
