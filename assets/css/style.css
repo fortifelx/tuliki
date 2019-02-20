@@ -903,7 +903,8 @@ body, html, * {
     color: #e56744;
     font-weight: bold; }
   .main_why_content {
-    width: 85%;
+    width: calc(100% - 24rem);
+    height: 52rem;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -916,7 +917,7 @@ body, html, * {
     line-height: 3rem;
     color: #444444;
     width: 100%;
-    height: 9rem;
+    height: 12rem;
     overflow: hidden; }
   .main_why_link {
     display: inline-block;
@@ -931,7 +932,7 @@ body, html, * {
       color: #e56744;
       transform: scale(1.3); }
   .main_why_options {
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -984,6 +985,62 @@ body, html, * {
         transform: scale(0.9); }
       .main_why_option:hover .main_why_option_text {
         transform: scale(1.1); }
+  .main_why_catalog {
+    display: block;
+    width: 24rem;
+    height: 52rem;
+    background-color: #e56744;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    bottom: 2rem;
+    z-index: 2;
+    transition: width 600ms ease-in-out; }
+    .main_why_catalog:before {
+      content: "";
+      display: block;
+      width: 2.6rem;
+      height: 5.2rem;
+      background-image: url("../img/l_white_arrow.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: calc(50% - 2.6rem);
+      left: 3rem;
+      transition: transform 400ms 300ms ease-in-out, left 400ms 400ms ease-in-out; }
+    .main_why_catalog h4 {
+      position: absolute;
+      bottom: 22rem;
+      right: -12rem;
+      display: inline-block;
+      font-size: 8rem;
+      line-height: 8rem;
+      color: white;
+      transform: rotate(90deg);
+      transition: transform 450ms 0ms ease-in-out, right 500ms 100ms ease-in-out; }
+      .main_why_catalog h4:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: width 450ms 350ms ease-in-out; }
+    .main_why_catalog:hover {
+      text-decoration: none;
+      color: white;
+      width: 58rem; }
+      .main_why_catalog:hover:before {
+        transform: rotateY(180deg);
+        left: 5rem; }
+      .main_why_catalog:hover h4 {
+        transform: rotate(0);
+        right: 4rem;
+        transition: transform 350ms 250ms ease-in-out, right 600ms ease-in-out; }
+        .main_why_catalog:hover h4:after {
+          width: 100%; }
 
 .main_wrapper {
   width: 100%;
