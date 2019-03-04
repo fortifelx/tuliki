@@ -1,0 +1,191 @@
+@media (min-width: $desct)
+
+  $a: 50%
+
+  //styles site bar titles
+  .site_bar
+    position: relative
+
+  .site_bar_title
+    font-family: $LatoB
+    font-size: 3.2rem
+    line-height: 4rem
+    margin-bottom: 2rem
+    color: $black
+
+
+
+  //Sections site bar
+
+  //Site BAR MAIN Icons
+
+  .site_bar_icons
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    margin-bottom: 5rem
+    &_icon
+      width: 5.5rem
+      height: 5.5rem
+      &>img
+        width: 100%
+        height: 100%
+
+  //Site Bar DOWN BG
+  .site_bar_down_bg
+    position: absolute
+    text-align: center
+    width: 100%
+    height: auto
+    bottom: 0
+    left: 0
+    right: 0
+    &>img
+      width: 90%
+      height: 100%
+  //Section Categories
+  .categories_list
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    &_item
+      overflow: hidden
+      position: relative
+      width: 40%
+      height: 12rem
+      padding: 1rem
+      margin-right: 4rem
+      margin-bottom: 4rem
+      background-color: #FFFFFF
+      transition: border 500ms
+      &:nth-child(2n)
+        margin-right: 0
+      &:hover
+        border: 1px solid $orange
+      &:hover &_bg
+        width: 14rem
+        height: 14rem
+        opacity: 0.3
+        transition: 500ms
+        h50rem
+      &>p
+        font-size: 1.4rem
+        font-family: $LatoB
+        line-height: 2rem
+        position: relative
+        z-index: 2
+      &>img
+        position: absolute
+        width: 40%
+        height: 50%
+        z-index: 2
+        right: 1rem
+        bottom: 1rem
+      &_bg
+        position: absolute
+        transition:  1s
+        top: 80%
+        left: 80%
+        width: 0rem
+        height: 0rem
+        content: ""
+        opacity: 0
+        background-color: $orange
+        border-radius: 50%
+        transform: translate(-50%,-50%)
+
+    //Section Seen
+
+  .site_bar_seen_list
+    display: flex
+    justify-content: space-between
+    align-items: center
+  .seen_item
+    display: flex
+    flex-direction: column
+    width: 30%
+    height: auto
+    &_img
+      width: 100%
+      height: auto
+      &>img
+        width: 100%
+        height: auto
+
+    //Filter
+  .site_bar_filter_input
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 2rem
+    position: relative
+    &>output
+      position: absolute
+      right: 2%
+      top: -80%
+      font-size: 1.2rem
+      font-family: $LatoB
+    &>select
+      border: 1px solid #000
+      width: 50%
+      background-color: #ffff
+      border-radius: 50%
+      font-family: $LatoB
+      font-size: 1.6rem
+      line-height: 2rem
+
+
+  .site_bar_filter_title
+    font-size: 1.6rem
+    font-family: $LatoB
+    color: $black
+    line-height: 2rem
+    margin-right: 2rem
+  #meters
+    width: 50%
+
+
+  //Catalogs on Page Gallery
+
+  .site_bar_catalogs
+    &_list
+      width: 100%
+      height: auto
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+    .site_bar_catalog
+      width: calc(50% - 1.5rem)
+      height: auto
+      margin-bottom: 5rem
+      &_wraper_img
+        position: relative
+        width: 100%
+        height: auto
+        margin-bottom: 2rem
+        &_picture
+          width: 100%
+          height: 100%
+      &_icon_download
+        width: 2rem
+        height: 2rem
+        position: absolute
+        bottom: -4rem
+        right: 0rem
+      &_title
+        height: auto
+        font-size: 1.4rem
+        font-family: $LatoR
+        color: $black
+        line-height: 2.4rem
+        text-decoration: none
+
+
+
+
+
+
+

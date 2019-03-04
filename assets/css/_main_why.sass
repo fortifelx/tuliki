@@ -1,0 +1,71 @@
+@media (min-width: $desct)
+
+  .main_why
+    width: 100%
+    margin: 0 auto
+    position: relative
+    padding: 10rem 0 2rem 3rem
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    &_options
+      padding: 2rem 2rem 0 2rem
+      display: flex
+      width: 100%
+      flex-direction: row
+      justify-content: space-between
+
+    &_option
+      width: 19rem
+      height: 19rem
+      position: relative
+      text-align: center
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-content: center
+      align-items: center
+      cursor: pointer
+
+      &:before
+        content: ''
+        width: 90%
+        height: 90%
+        display: block
+        position: absolute
+        top: 5%
+        left: 5%
+        border: 1rem solid $orange
+        border-radius: 100%
+        z-index: -1
+        transition: transform 500ms ease-in-out
+
+      &_number
+        font-size: 4rem
+        color: $black
+        line-height: 7rem
+        vertical-align: baseline
+
+      &_text
+        display: block
+        width: 100%
+        font-size: 1.6rem
+        line-height: 3.3rem
+        height: 3.3rem
+        vertical-align: baseline
+        background-color: white
+        position: relative
+        z-index: 1
+        color: $black
+        box-shadow: 0 0 10px 0 rgba(229, 103, 68, 0.2)
+        transition: transform 250ms 125ms ease-in-out
+
+      &:hover
+        text-decoration: none
+        color: $black
+
+        &:before
+          transform: scale(0.9)
+
+        .main_why_option_text
+          transform: scale(1.1)

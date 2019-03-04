@@ -41,6 +41,52 @@
 $('.main_slide_img_viewer img').click(function(){
     $(this).toggleClass('rotate_img');
 });
+
+// Slick Works--------------------------------------
+$(document).ready(function(){
+    $('.slider_works_list').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow : '<button class="slick-review slick-prev"><img src="assets/img/l_arrow_slider.svg" alt=""></button>',
+        nextArrow : '<button class="slick-review slick-next"><img src="assets/img/r_arrow_slider.svg" alt=""></button>',
+        dots: true,
+        customPaging : function(slider, i) {
+            var length = slider.$slides.length;
+            $('.slider_works_nav_count_check').text(i+1);
+            $('.slider_works_nav_count_quantity').text(length);
+            console.log(i);
+            // console.log(length)
+            // return i + 1;
+
+        }
+    });
+});
+// Slick Popular Мodels-----------------------------------------
+$(document).ready(function(){
+    $('.popular_models').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow : '<button class="slick-review slick-prev slick-models-prev"><img src="assets/img/l_arrow_slider.svg" alt=""></button>',
+        nextArrow : '<button class="slick-review slick-next slick-models-next"><img src="assets/img/r_arrow_slider.svg" alt=""></button>',
+    });
+});
+//---------------------------------------------------------------
+(function () {
+    var markers = $('.product_specifications_marker');
+    var blocks = $('.product_specifications_values_content');
+    markers.click(function () {
+        markers.removeClass('product_specifications_marker_active');
+        $(this).addClass('product_specifications_marker_active');
+        blocks.css('display','none');
+        var i = markers.index(this);
+        blocks[i].style.display='flex';
+    })
+})();
+
+
+
 // (function() {
 //     // Init
 //     var targets = $('.main_slide_img_viewer');
@@ -133,3 +179,4 @@ $('.main_slide_img_viewer img').click(function(){
 //         container.onmouseenter = onMouseEnterHandler;
 //     }
 // })();
+
